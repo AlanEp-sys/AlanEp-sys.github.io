@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ciencia de Datos</title>
+        <link rel="stylesheet" href="css/StylesAdmin.css">
+        <link rel="icon" type="image/png" href="imagenes/Icon.png">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    </head>
+    <body style="background-image: url('css/imagenes/Admin.png'); background-size: contain;">
+        <button class="button-home" onclick="home()">Menu
+        </button>
+        <div class="button-container">
+            <button class="center-button1">¿Qué es ciencia de datos?
+                <p>La ciencia de datos es el estudio científico de los datos para obtener conocimientos. Este campo combina varias disciplinas para extraer conclusiones de conjuntos de datos masivos con el fin de tomar decisiones y realizar predicciones de manera informada.</p> 
+            </button>
+        </div>
+        <div class="button-container">
+            <button class="center-button1">¿Por qué utilizar Python en ciencia de datos?
+                <p>Python es un lenguaje de programación de alto nivel que es fácil de aprender y usar. Es un lenguaje de programación versátil que se puede utilizar para realizar tareas de ciencia de datos, como la limpieza, el análisis y la visualización de datos.</p>
+            </button>
+        </div>
+        <script src="script.js"></script>
+        <script>
+        window.onload = async function() {
+            const loadingContainer = document.getElementById("loadingContainer");
+            try {
+                await ValidadorinicioRH();
+                obtenerNombremenu();
+                UserData();
+            } finally {
+                loadingContainer.style.display = "none";
+            }   
+        };  
+        
+        var dropdownContent = null;
+        document.getElementById("menuname").addEventListener("click", function() {
+            showDropdown();
+        });
+        </script>
+    </body>
+</html>

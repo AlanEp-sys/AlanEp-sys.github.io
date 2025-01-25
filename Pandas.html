@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pandas</title>
+        <link rel="stylesheet" href="css/StylesAdmin.css">
+        <link rel="icon" type="image/png" href="imagenes/Icon.png">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    </head>
+    <body style="background-image: url('css/imagenes/Admin.png'); background-size: contain;">
+        <div id="loadingContainer">
+            <img src="imagenes/loading.gif" alt="loading...">
+        </div>    
+        <button class="button-home" onclick="home()">Menu
+        </button>
+        <div class="button-container">
+            <button class="center-button1" onclick="window.location.href = 'AdminUpdateRH.html'">¿Qué es Pandas? 
+                <p>es una biblioteca de software escrita como extensión de Numpy para manipulación y análisis de datos para el lenguaje de programación Python.<br>En particular, ofrece estructuras de datos y operaciones para manipular tablas numéricas y series temporales.</p>
+            </button>
+            <button class="center-button1" onclick="window.location.href = 'AdminBajaRH.html'">¿Cómo funciona?
+                <p>Pandas se basa en dos estructuras de datos principales:<br>
+                    Series: Son arreglos unidimensionales que pueden almacenar cualquier tipo de datos (enteros, cadenas, flotantes, etc.). Son similares a las listas de Python, pero con funcionalidades adicionales.<br>
+                    DataFrames: Son estructuras de datos bidimensionales, similares a las tablas en bases de datos o a las hojas de cálculo de Excel. Los DataFrames están compuestos por una colección de Series.</p>
+            </button>
+            <button class="center-button1" onclick="window.location.href = 'AdminAltaRH.html'">Ventajas:</br>
+                1. Facilidad de Uso<br>
+                2. Eficiencia<br>
+                3. Versatilidad<br>
+                4. Manipulación de Datos<br>
+                5. Análisis y Estadísticas<br>
+                6. Visualización<br>
+                7. Comunidad y Soporte<br>
+                8. Documentación Completa<br>
+            </button>
+        </div>
+        <div class="button-container">
+            <button class="center-button1" onclick="window.location.href = 'AdminUpdateRH.html'">Cómo utilizan Pandas los científicos de datos.
+                <p>Pandas es una herramienta fundamental en la ciencia de datos debido a su capacidad para manejar y analizar datos de manera eficiente. Aquí te explico cómo se aplica en diferentes etapas del proceso de ciencia de datos:<br>
+
+                    1. Importación de Datos
+                    Pandas permite importar datos desde diversas fuentes como archivos CSV, Excel, bases de datos SQL, JSON, entre otros. Esto facilita la integración de datos de diferentes formatos en un solo DataFrame.
+                    </p>
+            </button>
+        </div>
+        <div class="button-container">
+            <button class="center-button2" onclick="window.location.href = 'AdminUpdateRH.html'">Que otras alternativas existen similares a Pandas.
+                <p>
+                    Existen varias alternativas a Pandas que también son populares en la ciencia de datos, como por ejemplo:<br>
+
+                    1. Dask
+                    Dask es una biblioteca que permite realizar análisis de datos en paralelo y manejar grandes conjuntos de datos que no caben en la memoria. Su API es similar a la de Pandas, lo que facilita la transición.<br>
+
+                    2. Vaex
+                    Vaex es una biblioteca diseñada para el procesamiento rápido de grandes conjuntos de datos. Permite realizar operaciones como filtrado, agrupación y agregación de manera eficiente sin cargar todos los datos en la memoria.<br>
+
+                    3. Modin
+                    Modin es una biblioteca que acelera las operaciones de Pandas utilizando múltiples núcleos de CPU. Puedes usar la misma API de Pandas, pero con un rendimiento mejorado.<br>
+
+                    4. Polars
+                    Polars es una biblioteca de procesamiento de datos en memoria que está optimizada para el rendimiento. Utiliza una arquitectura basada en columnas y es conocida por su velocidad y eficiencia.<br>
+
+                    5. Koalas
+                    Koalas es una biblioteca que proporciona una API similar a la de Pandas sobre Apache Spark. Esto permite escalar las operaciones de Pandas a grandes conjuntos de datos distribuidos.<br>
+
+                    6. PySpark
+                    PySpark es la interfaz de Python para Apache Spark, una plataforma de procesamiento de datos distribuida. Es ideal para trabajar con grandes volúmenes de datos y realizar análisis en paralelo.<br>
+                </p>
+            </button>
+        </div>
+        <script src="script.js"></script>
+        <script>
+        window.onload = async function() {
+            const loadingContainer = document.getElementById("loadingContainer");
+            try {
+                await ValidadorinicioRH();
+                obtenerNombremenu();
+                UserData();
+            } finally {
+                loadingContainer.style.display = "none";
+            }   
+        };  
+        
+        var dropdownContent = null;
+        document.getElementById("menuname").addEventListener("click", function() {
+            showDropdown();
+        });
+        </script>
+    </body>
+</html>
