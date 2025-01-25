@@ -15,15 +15,15 @@
         <button class="button-home" onclick="home()">Menu
         </button>
         <div class="button-container">
-            <button class="center-button1" onclick="window.location.href = 'AdminUpdateRH.html'">¿Qué es Pandas? 
+            <button class="center-button1">¿Qué es Pandas? 
                 <p>es una biblioteca de software escrita como extensión de Numpy para manipulación y análisis de datos para el lenguaje de programación Python.<br>En particular, ofrece estructuras de datos y operaciones para manipular tablas numéricas y series temporales.</p>
             </button>
-            <button class="center-button1" onclick="window.location.href = 'AdminBajaRH.html'">¿Cómo funciona?
+            <button class="center-button1">¿Cómo funciona?
                 <p>Pandas se basa en dos estructuras de datos principales:<br>
                     Series: Son arreglos unidimensionales que pueden almacenar cualquier tipo de datos (enteros, cadenas, flotantes, etc.). Son similares a las listas de Python, pero con funcionalidades adicionales.<br>
                     DataFrames: Son estructuras de datos bidimensionales, similares a las tablas en bases de datos o a las hojas de cálculo de Excel. Los DataFrames están compuestos por una colección de Series.</p>
             </button>
-            <button class="center-button1" onclick="window.location.href = 'AdminAltaRH.html'">Ventajas:</br>
+            <button class="center-button1">Ventajas:<br>
                 1. Facilidad de Uso<br>
                 2. Eficiencia<br>
                 3. Versatilidad<br>
@@ -35,7 +35,7 @@
             </button>
         </div>
         <div class="button-container">
-            <button class="center-button1" onclick="window.location.href = 'AdminUpdateRH.html'">Cómo utilizan Pandas los científicos de datos.
+            <button class="center-button1">Cómo utilizan Pandas los científicos de datos.
                 <p>Pandas es una herramienta fundamental en la ciencia de datos debido a su capacidad para manejar y analizar datos de manera eficiente. Aquí te explico cómo se aplica en diferentes etapas del proceso de ciencia de datos:<br>
 
                     1. Importación de Datos
@@ -44,7 +44,7 @@
             </button>
         </div>
         <div class="button-container">
-            <button class="center-button2" onclick="window.location.href = 'AdminUpdateRH.html'">Que otras alternativas existen similares a Pandas.
+            <button class="center-button2">Que otras alternativas existen similares a Pandas.
                 <p>
                     Existen varias alternativas a Pandas que también son populares en la ciencia de datos, como por ejemplo:<br>
 
@@ -69,22 +69,5 @@
             </button>
         </div>
         <script src="script.js"></script>
-        <script>
-        window.onload = async function() {
-            const loadingContainer = document.getElementById("loadingContainer");
-            try {
-                await ValidadorinicioRH();
-                obtenerNombremenu();
-                UserData();
-            } finally {
-                loadingContainer.style.display = "none";
-            }   
-        };  
-        
-        var dropdownContent = null;
-        document.getElementById("menuname").addEventListener("click", function() {
-            showDropdown();
-        });
-        </script>
     </body>
 </html>
