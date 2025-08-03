@@ -1,22 +1,69 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home</title>
-        <link rel="stylesheet" href="StylesAdmin.css">
-        <link rel="icon" type="image/png" href="imagenes/Icon.png">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
-    </head>
-    <body style="background-image: url('Admin.png'); background-size: contain;">
-        <div class="button-container">
-            <button class="center-button" onclick="redirigiacd()">CIENCIA DE DATOS
-            </button>
-            <button class="center-button" onclick="redirigiapandas()">PANDAS
-            </button>
-            <button class="center-button" onclick="window.location.href = 'https://colab.research.google.com/drive/1a7S1uIN0QO4NukKYj8od4QOHn2fXhpld?usp=sharing'">Hola Munodo
-            </button>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Personal - L.I. Alfredo Martínez</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Alan Espinoza</h1>
+        <p>¡Innovando con cada línea de código!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#acerca-de-mi">Acerca de mí</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+        </ul>
+    </nav>
+
+    <section id="inicio">
+        <h2>Bienvenido a mi portafolio</h2>
+        <p>¡Dale un vistazo a mi trabajo y conoce un poco más sobre mí!</p>
+    </section>
+
+    <section id="acerca-de-mi">
+        <article>
+            <h2>Acerca de mí</h2>
+            <p>Soy Alfredo Martínez, un entusiasta de la programación con gran entusiasmo por crear soluciones. 
+                Mi objetivo es desarrollar aplicaciones que no solo sean funcionales, sino también intuitivas y
+                fáciles de usar, contribuyendo al avance tecnológico y mejorando la experiencia del usuario. 
+                Estoy siempre aprendiendo y buscando nuevos desafíos para expandir mis habilidades.</p>
+        </article>
+    </section>
+
+    <section id="proyectos">
+        <h2>Mis Proyectos</h2>
+        <div class="project-container">
+            <div class="project-item">
+                
+                <a href="Proyecto1.html" >
+                <p>Una calculadora básica construida con HTML, CSS y JavaScript.</p></a>
+            </div>
+
+            <div class="project-item">
+                <a href="Proyecto2.html" >
+                <p>Una aplicac  ión sencilla para organizar tus tareas diarias.</p></a>
+            </div>
+
+            <div class="project-item">
+                
+                <a href="Proyecto3.html" >
+                <p>Mi plataforma para compartir artículos y pensamientos.</p></a>
+            </div>
+            
+            <p>¡Muchos más proyectos en camino!</p>
         </div>
-        <script src="script.js"></script>
-    </body>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Alfredo Martínez. Todos los derechos reservados.</p>
+        <p>Contacto: martinezcosio@email.com</p>
+    </footer>
+
+</body>
 </html>
